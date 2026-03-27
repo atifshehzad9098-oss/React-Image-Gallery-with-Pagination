@@ -1,16 +1,128 @@
-# React + Vite
+# Image Gallery App (React + API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+This is an Image Gallery App built with React.js and Tailwind CSS.
+The app fetches images from an API and displays them in card format.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Each card shows:
 
-## React Compiler
+* Image
+* Author name
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+When the user clicks on an image, it opens the original image link.
 
-## Expanding the ESLint configuration
+This project also includes pagination. Users can move between pages using Next and Prev buttons.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project helped me understand API calls, useEffect, and pagination in React.
+
+---
+
+## Features
+
+* Fetch images from API
+* Display images in cards
+* Show author name for each image
+* Click image to open original URL
+* Pagination (Next and Prev buttons)
+* Loading message while data is fetching
+* Responsive design using Tailwind CSS
+
+---
+
+## Technologies Used
+
+* React.js
+* JavaScript (ES6)
+* Tailwind CSS
+* Axios (for API calls)
+* HTML5
+* CSS3
+* Vite
+
+---
+
+## API Used
+
+This project uses the Picsum API:
+
+https://picsum.photos/v2/list
+
+---
+
+## Project Structure
+
+image-gallery-app
+│
+├── public
+│
+├── src
+│   ├── components
+│   │   └── Card.jsx
+│   ├── assets
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+└── vite.config.js
+
+---
+
+## How It Works
+
+1. The app loads and calls the API using useEffect.
+2. Images are fetched based on the page number.
+3. Data is stored using useState.
+4. Images are displayed using map() function.
+5. User can click Next or Prev to change pages.
+6. When page changes, new data is fetched automatically.
+7. While loading, a "Loading..." message is shown.
+
+---
+
+## Concepts Learned
+
+* React useState hook
+* React useEffect hook
+* API fetching using Axios
+* Rendering lists using map()
+* Component reuse (Card component)
+* Pagination logic
+* Conditional rendering
+* Event handling in React
+
+---
+
+## Preview
+
+Add your project screenshot here.
+
+Example:
+
+<img width="1812" height="727" alt="image" src="https://github.com/user-attachments/assets/96f8215e-5b31-4b39-9b88-1b3221552ccc" />
+
+---
+
+## Future Improvements
+
+* Add search feature
+* Add loading spinner instead of text
+* Add error handling for API
+* Add infinite scroll
+* Improve UI design
+
+---
+
+## Author
+
+Atif Shehzad
+
+Front-End Developer (Learning Stage)
+
+Skills: HTML, CSS, JavaScript, React, Tailwind CSS
