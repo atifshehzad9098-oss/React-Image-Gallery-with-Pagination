@@ -50,30 +50,6 @@ https://picsum.photos/v2/list
 
 ---
 
-## Project Structure
-
-image-gallery-app
-│
-├── public
-│
-├── src
-│   ├── components
-│   │   └── Card.jsx
-│   ├── assets
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-│
-├── .gitignore
-├── README.md
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-└── vite.config.js
-
----
-
 ## How It Works
 
 1. The app loads and calls the API using useEffect.
@@ -100,10 +76,6 @@ image-gallery-app
 ---
 
 ## Preview
-
-Add your project screenshot here.
-
-Example:
 
 <img width="1812" height="727" alt="image" src="https://github.com/user-attachments/assets/96f8215e-5b31-4b39-9b88-1b3221552ccc" />
 
